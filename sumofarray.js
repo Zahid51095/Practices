@@ -6,6 +6,7 @@ function getSumOfAnArray(numbers) {
         console.log(sum);
 
     }
+    return sum;
 }
 
 const myNumber = [12, 65, 45, 78, 32, 45, 91];
