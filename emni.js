@@ -1,8 +1,5 @@
-
-
-function print(a, b, c){
- return a+2;
- return a*b;
- return b*c+a;
+var a=2; 
+var b=3; 
+if(a<b){
+	console.log('Hello');
 }
-console.log(print(1,2,3));
