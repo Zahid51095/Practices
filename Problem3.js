@@ -2,16 +2,20 @@ function sortMaker(arr) {
     if(arr[0] === arr[1]) {
         return 'equal';
     }
-    else if(arr[0] < arr[1]){
-        return 'arr[1], arr[0]';
-    }
-    else if(arr[0] > 0 && arr[1] > 0) {
+    else if(arr[0] > 0 && arr[1] > 0 && arr[0] > arr[1]) {
         return arr;
     }
     else if(arr[0] < 0 || arr[1] < 0){
-        return 'Invalid input';
+        return 'Invalid Input';
     }
+    else if(arr[0] < arr[1]){
+        let temp = arr[0];
+        arr[0] = arr[1];
+        arr[1] = temp;
+        
+      }
+      return arr;
 }
 
-const ans = sortMaker([2,4]);
+const ans = sortMaker([4,-2]);
 console.log(ans);
